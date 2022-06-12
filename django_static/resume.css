@@ -1,0 +1,41 @@
+table, th, td {
+    border: 0.1px solid black;
+    border-collapse: collapse;
+  }
+  
+h3 {
+    margin-top:5px;
+    color:#D9514EFF;
+    font-size:15px;
+    font-weight:550;
+}
+
+.head__title{
+    display:flex;
+    /* flex-direction:row; */
+    justify-content:space-between;
+}
+
+*{
+    font-size:13.5px;
+    margin:0px
+}
+
+.duration{
+    color:#44556f;
+}
+
+.name__{
+    color:#D9514EFF;
+    font-size:20px;
+    font-weight:600;
+}
+
+hr{
+    margin-bottom:5px;
+}
+
+a{
+    color:#3b5998;
+    font-weight:600;
+}

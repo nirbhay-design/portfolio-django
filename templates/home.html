@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/profile-picture.png' %}" />
+    <script src="https://kit.fontawesome.com/74cf293773.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}" />
+</head>
+<body>
+    <div class="header">
+        <div class="Name_div">
+            <h2 class="Name"> Nirbhay Sharma </h2> 
+            <i class="fa-solid fa-handshake-simple"></i>
+        </div>
+        <button class="resume__button" onclick="location.href='resume/'">Resume</button>
+    </div>
+
+    <div class="about-section">
+        <div class="about-content">
+            <img src="{% static 'images/profile-picture.png' %}" class='profile-pic'/>
+            <div class="name_div">
+                <h1 class="my_name"> Nirbhay </h1>
+                <h1 class="my_name"> Sharma </h1>
+            </div>
+        </div>
+        <div class="about_div">
+            <h4 class='about__desc' style="color:#101820ff">
+                I am currently a final year B.Tech (UG) student at IIT Jodhpur (IITJ), I have keen interest in machine learning, and fascinated about the beautifual use of mathematics in machine learning. Apart from machine learning, I have keen interests in other technologies as well, such as web developement, I had a good knowledge about django, flask, react, nodejs etc., Apart from academics I have also keen interest in yoga, mediatation and badminton. Thanks for visiting my website.
+            </h4>
+        </div>
+    </div>
+
+    <div class="skill_intro_div">
+        <h2 class='skill_intro'> Skills </h2>
+    </div>
+
+    <div class='skills_section'>
+        {%for skill in skills%}
+            <div class='skill_container'>
+                <h3 class="skill_type"> {{skill.type}} </h3>
+                <img class="skill_image" src="{%static skill.image %}"/>
+                <hr/>
+                <ul>
+                    {%for each_skill in skill.list%}
+                        <li> <h4> {{each_skill}} </h4> </li>
+                    {%endfor%}
+                </ul>
+            </div>
+        {%endfor%}
+    </div>
+
+    <div class="project_intro_div">
+        <h2 class='project_intro'> Projects </h2>
+    </div>
+
+    <div class="projects-container">
+        {% for work in projects %}
+        <div class="project-container">
+            {% comment %} div has an image, project-title, github url, live url (optional), description, category, techs  {% endcomment %}
+            <div class='image'>
+                <img src="{% static work.image %}"/>
+                <hr/>
+            </div>
+            <div class="project-content">
+                <h3 class="project-title"> {{work.title}} | {{work.category}} </h3>
+                <div class="project-essentials"> 
+                    <h5 class='tech-stack'> Tech: {{work.techs}} </h5>
+                    <a href="{{work.github}}"><i class="fa-brands fa-github"></i></a>
+                    {% if work.url %}
+                        <a href="{{work.url}}"> <i class="fa-brands fa-chrome"></i></i> </a>
+                    {%endif%}
+                    <h5 class='project-description'> {{work.description}}</h5> 
+                </div>
+            </div>
+
+        </div>
+        {%endfor%}
+    </div>
+
+    <div class="experience_intro_div">
+        <h2 class='experience_intro'> Experience </h2>
+    </div>
+
+    <div class='experience_div'>
+        {%for exp in experience %}
+            <div class='ind_exp_div'>
+                <div class="exp_info">
+                    <h3> {{exp.title}} </h3>
+                    <h4> Under: {{exp.under}} </h4>
+                    <h4> {{exp.duration}} </h4>
+                    <h4> {{exp.position}} </h4>
+                </div>
+                <img class="exp_img" src="{%static exp.image %}" />
+            </div>
+        {%endfor%}
+    </div>
+
+    <hr class='footer-hr'/>
+    <div class="footer-nirbhay">
+        <div class="credentials">
+            <a href="https://www.github.com/nirbhay-design/"> <i class="fa-brands fa-github"> </i> </a>
+            <a href="https://www.linkedin.com/in/nirbhay-sharma-a2b846204/"> <i class="fa-brands fa-linkedin"></i> </a>
+            <a href="mailto:sharma.59@iitj.ac.in"> <i class="fa-solid fa-envelope"></i> </a>
+        </div>
+        Made by @ <a href="mailto:sharma.59@iitj.ac.in" class="footer_anchorbox"> Nirbhay-sharma </a>
+    </div>
+</body>
+</html>

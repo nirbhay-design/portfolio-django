@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'images/profile-picture.png' %}" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="{% static 'resume.css' %}" />
+</head>
+<body>
+    <div class="resume-container">
+        <div class='head__title'> <span> <a href="https://github.com/nirbhay-design"> Github </a> </span> <span class="name__"> Nirbhay Sharma </span> <span> <a href="mailto:sharma.59@iitj.ac.in"> Email </a> </span> </div>
+        <div class='head__title'> <span> <a href="https://www.linkedin.com/in/nirbhay-sharma-a2b846204/"> Linkedin </a> </span> <span> 9369630713 </span> <span> <a href="https://sharma59.web.app/"> Portfolio </a> </span> </div>
+
+        <h3>Education</h3>
+
+        <hr/>
+
+        <div class='head__title'> <span><strong>B.Tech</strong>, CSE | IIT Jodhpur </span> <span class="duration">Aug'19-Present</span> </div>
+        <div> CGPA(Ongoing): <strong>8.77</strong>/10 </div>
+
+        <div class='head__title'> <span><strong>Class 12<sup>th</sup> </strong> | Dehradun public school </span> <span class="duration">Mar'18-Mar'19</span> </div>
+        <div> Percentage: <strong>96.4%</strong> </div>
+
+        <h3>Technical Skills</h3>
+
+        <hr/>
+
+        <div> <span><strong>Languages:</strong> </span> <span> Python, C/C++, HTML/CSS, Javascript, Haskell, Prolog</span> </div>
+        <div> <span><strong>Tools and Frameworks:</strong> </span> <span>Pytorch, Sklearn, Numpy, Pandas, Matplotlib, Seaborn, Flask, Django, Regex, Heroku, Git, Github, Firebase, Mongodb, Mysql</span> </div>
+        <div> <span><strong>Familier with:</strong> </span> <span>Tensorflow, Java, React, Nodejs, ejs, Google Colab, OpenCV</span> </div>
+
+        <h3>Experience</h3>
+
+        <hr/>
+
+        <strong> Light weight CNN architecture for diagnoses of Chest Radiographs </strong> | Pytorch, Python, Torchvision, Numpy, Matplotlib
+
+        <div class="head__title"><span><strong>Mentor:</strong> Dr. Angshuman Paul | IIT Jodhpur</span> <span class="duration"> Jun'21-Mar'22 </span> </div>
+        
+        <ul>
+        <li> Task to design a <strong>Lightweight CNN model</strong> for the abnormal detection of <strong>Chest Radiographs</strong> </li>
+        <li> Implemented various architectures like <strong>Squeezenet</strong>, <strong>Mobilenet</strong>, <strong>Resnet</strong> </li>
+        <li> Achieved <strong>72%</strong> accuracy with the fine tuning of the architectures </li>
+        </ul>
+
+        <h3>Projects</h3>
+
+        <hr/>
+
+        <strong>CNN Algorithms Comparison</strong> | <a href="https://github.com/nirbhay-design/CNNAlgosComparison"> Github </a> | Pytorch, Numpy, Matplotlib, PIL, Python
+
+        <ul>
+        <li> Compared <strong>7</strong> deep <strong>CNN</strong> architectures on <strong>Retinal Eye disease dataset</strong></li>
+        <li> Coded <strong>Squeezenet</strong>, <strong>Mobilenet</strong>, <strong>Inceptionnet</strong>, <strong>Shufflenet</strong>, <strong>Googlenet</strong>, <strong>Resnet</strong>, <strong>Efficientnet</strong> from <strong>scratch</strong></li>
+        <li> Performed a comparison study among the state-of-the-art deep CNN architectures</li>
+        </ul>
+
+        <strong>Image Colorization</strong> | <a href="https://github.com/nirbhay-design/dlops-project"> Github </a> | Pytorch, Numpy, Matplotlib, PIL, Python
+        
+        <ul>
+        <li> Converted <strong>grayscale image</strong> to <strong>colored image</strong> using <strong>GAN</strong> architectures</li>
+        <li> Used <strong>pix2pix</strong> GAN from scratch for the colorization task</li>
+        <li> Performed colorization on <strong>LAB</strong> and <strong>RGB</strong> image format</li>
+        </ul>
+
+        <strong>Mask-NoMask Detection</strong> | <a href="https://github.com/nirbhay-design/mask-nomask-classification"> Github </a> | Pytorch, Numpy, PIL, Matplotlib, Python
+
+        <ul>
+        <li> Detected around <strong>5300</strong> images under masked and no masked category with an accuracy of <strong>99.6%</strong></li>
+        <li> Used transfer learning with <strong>Mobilenet v2</strong> for classification task</li>
+        <li> Combined the trained model with <strong>OpenCV</strong> for real time classification</li>
+        </ul>
+        <!-- <strong>Skin Cancer Detection</strong> | [Github](https://github.com/nirbhay-design/SkinCancerDetection) | Pytorch, Numpy, Matplotlib, Python
+
+        - Detected around <strong>10000</strong> images under the <strong>7</strong> diseases with an accuracy of <strong>73.9%<strong>
+        - Used transfer learning with <strong>squeezenet</strong> and <strong>mobilenet</strong> for classification -->
+
+        <strong>PRA-Visualizer</strong> | <a href="https://github.com/nirbhay-design/pra-visualizer"> Github </a> | <a href="https://pra-visualizer.web.app/"> Url </a> | React, Nodejs, HTML, CSS, Firebase
+
+        <ul>
+        <li> Implemented a <strong>Page replacement algorithm visualizer</strong> which simulates various page replacement algorithms given <strong>Frames</strong> and <strong>demand pages</strong></li>
+        <li> Implemented <strong>10</strong> algorithms including <strong>LRU</strong>, <strong>Working set</strong>, <strong>FIFO</strong> etc.</li>
+        </ul>
+
+        <h3>Course-works</h3>
+
+        <hr/>
+
+        <div class="head__title"> <ul> <li> Pattern recognition & Machine learning </li>  <li> Deep Learning </li> </ul>  <ul> <li> Database </li>  <li> Operating systems </li> </ul> <ul> <li> Probability & statistics </li> <li> Computer architecture </li> </ul></div>
+
+    </div>
+    <div class="footer-nirbhay">
+        Made by @ <a href="mailto:sharma.59@iitj.ac.in" class="footer_anchorbox"> Nirbhay-sharma </a>
+    </div>
+</body>
+</html>
