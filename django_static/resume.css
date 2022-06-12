@@ -17,8 +17,8 @@ h3 {
 }
 
 *{
-    font-size:13.5px;
-    margin:0px
+    font-family:helvetica;
+    /* margin:0px; */
 }
 
 .duration{
@@ -33,9 +33,39 @@ h3 {
 
 hr{
     margin-bottom:5px;
+    margin-top:0px;
 }
 
 a{
     color:#3b5998;
     font-weight:600;
+    text-decoration:none;
+}
+
+body {
+    /* background-color: #DEE1E6 ; */
+}
+
+.resume-container {
+    width:60%;
+    padding:20px;
+    margin-top:50px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:1px 1px 90px 4px gray;
+    background-color:white;
+    flex-grow:1;
+}
+
+.footer-nirbhay {
+    margin-top:5vh;
+    margin-bottom:20px;
+    text-align:center;
+    padding:10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .resume-container{
+        width:90%;
+    }
 }
