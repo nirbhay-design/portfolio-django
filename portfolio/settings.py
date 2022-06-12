@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['nirbhay-sharma.herokuapp.com','localhost','127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
+    'app_portfolio.apps.AppPortfolioConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
