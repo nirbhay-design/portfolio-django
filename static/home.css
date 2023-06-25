@@ -431,5 +431,8 @@ a {
     .about__desc {
         font-weight:900;
     }
+    .skill_intro_div, .project_intro_div, .experience_intro_div, .connect_div {
+        width:90%;
+    }
 }
 
