@@ -150,7 +150,7 @@ def home(request):
         {
             'under':'Pradeep Mishra, Kaushik Raghupathruni, Shogo Yamashita',
             'title':'Split Neural Network Models',
-            'duration':'june2022-Today',
+            'duration':'june2022-july2022',
             'image':'images/exawizards.png',
             'position':'AI Engineer (Intern)',
             'desc':'The project aims at exploring split learning by splitting various networks used for instance segmentation, semantic segmentation, face detection task.'

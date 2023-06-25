@@ -133,7 +133,9 @@
     <div class='experience_div'>
         {%for exp in experience %}
             <div class='ind_exp_div'>
-                <img class="exp_img" src="{%static exp.image %}" />
+                <div class='exp_img_div'>
+                    <img class="exp_img" src="{%static exp.image %}" />
+                </div>
                 <div class="exp_info">
                     <h3 class='exp_htags'> {{exp.title}} </h3>
                     <hr/>
