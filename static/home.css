@@ -434,5 +434,10 @@ a {
     .skill_intro_div, .project_intro_div, .experience_intro_div, .connect_div {
         width:90%;
     }
+
+    .credentials {
+        display:flex;
+        flex-direction:column;
+    }
 }
 
