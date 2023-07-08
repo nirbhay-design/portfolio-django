@@ -427,6 +427,10 @@ a {
         width:96%;
     }
 
+    .fa-handshake-simple {
+        display:none;
+    }
+
     .project-container {
         width:80%;
         margin-left:auto;
