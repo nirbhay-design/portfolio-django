@@ -11,8 +11,8 @@
 </head>
 <body>
     <div class="resume-container">
-        <div class='head__title'> <span> <a href="https://github.com/nirbhay-design"> Github </a> </span> <span class="name__"> Nirbhay Sharma </span> <span> <a href="mailto:sharma.59@iitj.ac.in"> Email </a> </span> </div>
-        <div class='head__title'> <span> <a href="https://www.linkedin.com/in/nirbhay-sharma-a2b846204/"> Linkedin </a> </span> <span> 9369630713 </span> <span> <a href="https://nirbhay-sharma.vercel.app/"> Portfolio </a> </span> </div>
+        <div class='head__title'> <span> <a href="https://github.com/nirbhay-design"> Github </a> </span> <span class="name__"> Nirbhay Sharma </span> <span> <a href="https://www.linkedin.com/in/nirbhay-sharma-a2b846204/"> Linkedin </a> </span> </div>
+        <div class='head__title'> <span> <a href="mailto:sharma.59@iitj.ac.in"> Email </a> </span> <span> 9369630713 </span> <span> <a href="https://nirbhay-sharma.vercel.app/"> Portfolio </a> </span> </div>
 
         <h3>Education</h3>
 
@@ -39,64 +39,101 @@
 
         <hr/>
 
-        <strong> Light weight CNN architecture for diagnoses of Chest Radiographs </strong> | Pytorch, Python, Torchvision, Numpy, Matplotlib
+        <strong>Split Neural Networks</strong> | Pytorch, Python, Jetson Nano, PySyft
 
-        <div class="head__title"><span><strong>Mentor:</strong> Dr. Angshuman Paul | IIT Jodhpur</span> <span class="duration"> Jun'21-Mar'22 </span> </div>
+        <div class="head__title"><span> <strong> Intern </strong> (ML Engineer) | <strong> ExaWizards </strong> India </span> <span class="duration"> Jun'22-July'22 </span> </div>
         
         <ul>
-        <li> Task to design a <strong>Lightweight CNN model</strong> for the abnormal detection of <strong>Chest Radiographs</strong> </li>
-        <li> Implemented various architectures like <strong>Squeezenet</strong>, <strong>Mobilenet</strong>, <strong>Resnet</strong> </li>
-        <li> Achieved <strong>72%</strong> accuracy with the fine tuning of the architectures </li>
+            <li>Splitted <strong>Mask-RCNN, FCN_Resnet50, YOLOv5</strong> for <strong>Instance segmentation, segmentation, face detection</strong> tasks</li>
+            <li>Utilized <strong>Pysyft</strong> and <strong>Jetson Nano</strong> for transferring features from one device to another</li>
+            <li>Implemented <strong>encoder-decoder</strong> architecture for <strong>tensor compression</strong></li>
+            <li>Reduced <strong>inference time</strong> on Jetson nano device while preserving <strong>data privacy</strong></li>
         </ul>
 
+        <strong>Noise Engineered Federated Distillation for Heterogeneous Settings</strong> | Pytorch, FL, Python
+
+        <div class="head__title"><span><strong> Research Project</strong> | Supervisor: <strong> Dr. Deepak Mishra</strong>  | IIT Jodhpur</span> <span class="duration"> Aug'22-May'23 </span> </div>
+        
+        <ul>
+        <li><strong>Proposed</strong> a <strong>novel</strong> Federated Learning Framework to handle <strong>model heterogeneity</strong> among clients</li>
+        <li>Utilized the concept of <strong>Data-free KD</strong> for <strong>knowledge transfer</strong> from Client models to Server model </li>
+        <li>Solved the issue of requirement of <strong>Generator or proxy dataset</strong> at server end for KD</li>
+        <li>Utilized <strong>Gaussian Noise</strong> samples for Distillation </li>
+        <li>Compared and <strong>analyzed</strong> our algorithm with state-of-the-art algorithms for <strong>Model heterogeneity</strong></li>
+        <li><strong>Outperformed</strong> the <strong>relevant baselines</strong> in terms of <strong>test accuracy</strong> by a considerable margin</li>
+        </ul>
+        <strong>Light Weight CNN Model for Chest Radiographs Classification</strong> | Pytorch, Python, Torchvision, Numpy
+
+        <div class="head__title"><span><strong> Research Project</strong> | Supervisor: <strong> Dr. Angshuman Paul</strong>  | IIT Jodhpur</span> <span class="duration"> Jun'21-Mar'22 </span> </div>
+        <ul>
+        <li>Designed a <strong>Lightweight CNN model</strong> for the abnormal detection of <strong>Chest Radiographs</strong></li>
+        <li>Combined the ideas from <strong>Squeezenet</strong> and <strong>Mobilenet</strong> to prepare a Light weight model</li>
+        <li>Our Model Outperforms various light weight CNN architectures like <strong>Squeezenet</strong>, <strong>Shufflenet</strong>, <strong>Mobilenet</strong> on NIH dataset both on binary and multiclass classification</li>
+        <li>Our <strong>research paper</strong> recently got revised in <strong>Medical Physics Journal</strong></li>
+        </ul>
         <h3>Projects</h3>
 
         <hr/>
 
+        <strong>Regularizing Federated Learning (FL) via Adversarial Model Perturbations (AMP)</strong> | <a href="https://github.com/nirbhay-design/DAI_Project"> Github </a> | Pytorch, FL, Python
+
+
+        <div><strong>Course Project</strong> | Supervisor: <strong>Dr. Richa Singh</strong> | IIT Jodhpur </div>
+        <ul>
+            <li> Compared and analyzed the effect of <strong>Adversarial Model Perturbations (AMP)</strong> on <strong>4</strong> state-of-the-art Federated Learning algorithms</li> 
+            <li> Implemented <strong>FedAvg</strong>, <strong>FedProx</strong>, <strong>FedNTD</strong>, <strong>SCAFFOLD</strong> from <strong>scratch</strong></li>
+            <li> Integrated the AMP module with aforementioned FL algorithms at client side</li>
+            <li> Observed a boost of <strong>2-3%</strong> accuracy in each of the algorithm</li>
+        </ul>
+
         <strong>CNN Algorithms Comparison</strong> | <a href="https://github.com/nirbhay-design/CNNAlgosComparison"> Github </a> | Pytorch, Numpy, Matplotlib, PIL, Python
 
+        <div><strong>Course Project</strong> | Supervisor: <strong>Dr. Mayank Vatsa</strong> | IIT Jodhpur</div>
         <ul>
-        <li> Compared <strong>7</strong> deep <strong>CNN</strong> architectures on <strong>Retinal Eye disease dataset</strong></li>
-        <li> Coded <strong>Squeezenet</strong>, <strong>Mobilenet</strong>, <strong>Inceptionnet</strong>, <strong>Shufflenet</strong>, <strong>Googlenet</strong>, <strong>Resnet</strong>, <strong>Efficientnet</strong> from <strong>scratch</strong></li>
-        <li> Performed a comparison study among the state-of-the-art deep CNN architectures</li>
+            <li> Compared <strong>7</strong> deep <strong>CNN</strong> architectures on <strong>Retinal Eye disease dataset</strong></li>
+            <li> Implemented <strong>Squeezenet</strong>, <strong>Mobilenet</strong>, <strong>Inceptionnet</strong>, <strong>Shufflenet</strong>, <strong>Googlenet</strong>, <strong>Resnet</strong>, <strong>Efficientnet</strong> from <strong>scratch</strong></li>
+            <li> Performed a comparison study among the state-of-the-art deep CNN architectures</li>
         </ul>
 
         <strong>Image Colorization</strong> | <a href="https://github.com/nirbhay-design/dlops-project"> Github </a> | Pytorch, Numpy, Matplotlib, PIL, Python
-        
+
+        <div><strong>Course Project</strong> | Supservisor: <strong>Dr. Mayank Vatsa</strong> | IIT Jodhpur </div>
         <ul>
-        <li> Converted <strong>grayscale image</strong> to <strong>colored image</strong> using <strong>GAN</strong> architectures</li>
-        <li> Used <strong>pix2pix</strong> GAN from scratch for the colorization task</li>
-        <li> Performed colorization on <strong>LAB</strong> and <strong>RGB</strong> image format</li>
+            <li> Converted <strong>grayscale image</strong> to <strong>colored image</strong> using <strong>GAN</strong> architectures</li>
+            <li> Implemented <strong>pix2pix</strong> GAN from scratch for the colorization task</li>
+            <li> Performed colorization on <strong>LAB</strong> and <strong>RGB</strong> image format</li> 
         </ul>
 
         <strong>Mask-NoMask Detection</strong> | <a href="https://github.com/nirbhay-design/mask-nomask-classification"> Github </a> | Pytorch, Numpy, PIL, Matplotlib, Python
 
+        <div><strong>Course Project</strong> | Supservisor: <strong>Dr. Richa Singh</strong> | IIT Jodhpur </div>
         <ul>
-        <li> Detected around <strong>5300</strong> images under masked and no masked category with an accuracy of <strong>99.6%</strong></li>
-        <li> Used transfer learning with <strong>Mobilenet v2</strong> for classification task</li>
-        <li> Combined the trained model with <strong>OpenCV</strong> for real time classification</li>
-        </ul>
-        <!-- <strong>Skin Cancer Detection</strong> | [Github](https://github.com/nirbhay-design/SkinCancerDetection) | Pytorch, Numpy, Matplotlib, Python
+            <li> Detected <strong>5300</strong> images under masked and no masked category with an accuracy of <strong>99.6%</strong></li>
+            <li> Used transfer learning with <strong>Mobilenet v2</strong> for classification task</li>
+            <li> Combined the trained model with <strong>OpenCV</strong> for real time classification</li>
 
-        - Detected around <strong>10000</strong> images under the <strong>7</strong> diseases with an accuracy of <strong>73.9%<strong>
-        - Used transfer learning with <strong>squeezenet</strong> and <strong>mobilenet</strong> for classification -->
+        </ul>
 
         <strong>PRA-Visualizer</strong> | <a href="https://github.com/nirbhay-design/pra-visualizer"> Github </a> | <a href="https://pra-visualizer.web.app/"> Url </a> | React, Nodejs, HTML, CSS, Firebase
 
+        <div><strong>Course Project</strong> | Supservisor: <strong>Dr. Suchetna Chakraborty</strong> | IIT Jodhpur</div>
         <ul>
-        <li> Implemented a <strong>Page replacement algorithm visualizer</strong> which simulates various page replacement algorithms given <strong>Frames</strong> and <strong>demand pages</strong></li>
-        <li> Implemented <strong>10</strong> algorithms including <strong>LRU</strong>, <strong>Working set</strong>, <strong>FIFO</strong> etc.</li>
+            <li> Implemented a <strong>Page replacement algorithm visualizer</strong> which simulates various page replacement algorithms given <strong>Frames</strong> and <strong>demand pages</strong></li>
+            <li> Implemented <strong>10</strong> algorithms including <strong>LRU</strong>, <strong>Working set</strong>, <strong>FIFO</strong> etc. </li>
+            <li> Implemented the visualization functionality of <strong> Page Fault </strong> & <strong> Page Hit </strong></li>
+            <li> Added the functionality of <strong> Graphical Visualization </strong> of comparison among the algorithm </li>
+            <li> Used <strong> React </strong> for frontend and <strong> Firebase </strong> for Deployment </li>
         </ul>
 
         <h3>Course-works</h3>
 
         <hr/>
 
-        <div class="head__title"> <ul> <li> Pattern recognition & Machine learning </li>  <li> Deep Learning </li> <li> Dependable AI </li>  <li> Database Management Systems (DBMS) </li> <li> Cryptography </li> <li> Introduction to Blockchain </li>  <li> Operating systems </li>  <li> Probability & statistics </li> <li> Computer architecture </li> </ul></div>
+        <div class="head__title"> <ul> <li> Pattern recognition & Machine learning </li>  <li> Deep Learning </li> <li> Dependable AI </li> <li> Time Series Analysis </li>  <li> Database Management Systems (DBMS) </li> <li> Cryptography </li> <li> Introduction to Blockchain </li>  <li> Operating systems </li>  <li> Probability & statistics </li> <li> Computer architecture </li> </ul></div>
 
     </div>
     <div class="footer-nirbhay">
-        Made by @ <a href="mailto:sharma.59@iitj.ac.in" class="footer_anchorbox"> Nirbhay-sharma </a>
+        Made by @ <strong> Nirbhay-sharma </strong>
     </div>
 </body>
 </html>
