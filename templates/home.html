@@ -83,35 +83,35 @@
             <h2 class='project_intro'> ML Projects </h2>
         </div>
 
-        
-
-    </div>
-
-
-    <div class="projects-container">
-        {% for work in projects %}
-        {% if work.category == "ML/DL" %}
-        <div class="project-container">
-            {% comment %} div has an image, project-title, github url, live url (optional), description, category, techs  {% endcomment %}
-            <div class='image'>
-                <img src="{% static work.image %}" class='ml_proj_img'/>
-            </div>
-            <div class="project-content">
-                <h3 class="project-title"> {{work.title}} | {{work.category}} </h3>
-                <div class="project-essentials"> 
-                    <h5 class='tech-stack'> Tech: {{work.techs}} </h5>
-                    <a class="anchor_button" href="{{work.github}}">Github <i class="fa-brands fa-github"></i></a>
-                    {% if work.url %}
-                        <a class="anchor_button" href="{{work.url}}">Live <i class="fa-brands fa-chrome"></i></i> </a>
-                    {%endif%}
-                    <h5 class='project-description'> {{work.description}}</h5> 
+        <div class="projects-container">
+            {% for work in projects %}
+            {% if work.category == "ML/DL" %}
+            <div class="project-container">
+                {% comment %} div has an image, project-title, github url, live url (optional), description, category, techs  {% endcomment %}
+                <div class='image'>
+                    <img src="{% static work.image %}" class='ml_proj_img'/>
                 </div>
+                <div class="project-content">
+                    <h3 class="project-title"> {{work.title}} | {{work.category}} </h3>
+                    <div class="project-essentials"> 
+                        <h5 class='tech-stack'> Tech: {{work.techs}} </h5>
+                        <a class="anchor_button" href="{{work.github}}">Github <i class="fa-brands fa-github"></i></a>
+                        {% if work.url %}
+                            <a class="anchor_button" href="{{work.url}}">Live <i class="fa-brands fa-chrome"></i></i> </a>
+                        {%endif%}
+                        <h5 class='project-description'> {{work.description}}</h5> 
+                    </div>
+                </div>
+    
             </div>
-
+            {%endif%}
+            {%endfor%}
         </div>
-        {%endif%}
-        {%endfor%}
+
     </div>
+
+
+    
 
 
     <div class="upper__content">
@@ -120,32 +120,34 @@
             <h2 class='project_intro'> Web-Dev Projects </h2>
         </div>
 
-    </div>
-
-    <div class="projects-container">
-        {% for work in projects %}
-        {% if work.category == "web-dev" %}
-        <div class="project-container">
-            {% comment %} div has an image, project-title, github url, live url (optional), description, category, techs  {% endcomment %}
-            <div class='image'>
-                <img src="{% static work.image %}" class='ml_proj_img'/>
-            </div>
-            <div class="project-content">
-                <h3 class="project-title"> {{work.title}} | {{work.category}} </h3>
-                <div class="project-essentials"> 
-                    <h5 class='tech-stack'> Tech: {{work.techs}} </h5>
-                    <a class="anchor_button" href="{{work.github}}">Github <i class="fa-brands fa-github"></i></a>
-                    {% if work.url %}
-                        <a class="anchor_button" href="{{work.url}}">Live <i class="fa-brands fa-chrome"></i></i> </a>
-                    {%endif%}
-                    <h5 class='project-description'> {{work.description}}</h5> 
+        <div class="projects-container">
+            {% for work in projects %}
+            {% if work.category == "web-dev" %}
+            <div class="project-container">
+                {% comment %} div has an image, project-title, github url, live url (optional), description, category, techs  {% endcomment %}
+                <div class='image'>
+                    <img src="{% static work.image %}" class='ml_proj_img'/>
                 </div>
+                <div class="project-content">
+                    <h3 class="project-title"> {{work.title}} | {{work.category}} </h3>
+                    <div class="project-essentials"> 
+                        <h5 class='tech-stack'> Tech: {{work.techs}} </h5>
+                        <a class="anchor_button" href="{{work.github}}">Github <i class="fa-brands fa-github"></i></a>
+                        {% if work.url %}
+                            <a class="anchor_button" href="{{work.url}}">Live <i class="fa-brands fa-chrome"></i></i> </a>
+                        {%endif%}
+                        <h5 class='project-description'> {{work.description}}</h5> 
+                    </div>
+                </div>
+    
             </div>
-
+            {%endif%}
+            {%endfor%}
         </div>
-        {%endif%}
-        {%endfor%}
+
     </div>
+
+    
 
 
     <div class="upper__content">
@@ -154,29 +156,27 @@
             <h2 class='experience_intro'> Research / Industry Experience </h2>
         </div>
 
-        
-
-    </div>
-
-    <div class='experience_div'>
-        {%for exp in experience %}
-            <div class='ind_exp_div'>
-                <div class='exp_img_div'>
-                    <img class="exp_img" src="{%static exp.image %}" />
+        <div class='experience_div'>
+            {%for exp in experience %}
+                <div class='ind_exp_div'>
+                    <div class='exp_img_div'>
+                        <img class="exp_img" src="{%static exp.image %}" />
+                    </div>
+                    <div class="exp_info">
+                        <h3 class='exp_htags'> {{exp.title}} </h3>
+                        {% comment %} <hr/> {% endcomment %}
+                        <h4 class='exp_htags'> <span class='exp_span_tags'>Supervisor:</span> {{exp.under}} </h4>
+                        {% comment %} <hr/> {% endcomment %}
+                        <h4 class='exp_htags'> <span class='exp_span_tags'>Duration:</span> {{exp.duration}} </h4>
+                        {% comment %} <hr/> {% endcomment %}
+                        <h4 class='exp_htags'> <span class='exp_span_tags'>Position:</span> {{exp.position}} </h4>
+                        {% comment %} <hr/> {% endcomment %}
+                        <h4 class='exp_htags'> <span class='exp_span_tags'>Description:</span> {{exp.desc}} </h4>
+                    </div>
                 </div>
-                <div class="exp_info">
-                    <h3 class='exp_htags'> {{exp.title}} </h3>
-                    <hr/>
-                    <h4 class='exp_htags'> Supervisor: {{exp.under}} </h4>
-                    <hr/>
-                    <h4 class='exp_htags'> {{exp.duration}} </h4>
-                    <hr/>
-                    <h4 class='exp_htags'> {{exp.position}} </h4>
-                    <hr/>
-                    <h4 class='exp_htags'> {{exp.desc}} </h4>
-                </div>
-            </div>
-        {%endfor%}
+            {%endfor%}
+        </div>
+
     </div>
 
     <div class="upper__content">

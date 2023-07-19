@@ -67,15 +67,15 @@ body {
     gap:20px 20px;
     grid-template-columns: repeat(3,1fr);
     /* margin:0px; */
-    width:85%;
+    width:95%;
     margin-left:auto;
     margin-right:auto;
     margin-bottom: 30px;
 }
 
 .project-container {
-    border:1px solid gray;
-    border-radius: 5px;
+    /* border:1px solid gray; */
+    /* border-radius: 5px; */
     padding:5px;
     /* box-shadow:1px 1px 4px 2px gray; */
     text-align:center;
@@ -93,8 +93,8 @@ body {
 }
 
 .skill_container {
-    border: 1px solid gray;
-    border-radius: 5px;
+    /* border: 1px solid gray; */
+    /* border-radius: 5px; */
     background-color:white;
     width:30%;
     height:675px;
@@ -297,7 +297,7 @@ a {
     border:1px solid #3b5998;
     border-radius:3px;
     padding:10px;
-    margin:10px;
+    margin:10px; 
 }
 
 .anchor_button_res {
@@ -337,16 +337,20 @@ a {
 }
 
 .experience_div {
-    width:85%;
+    width:95%;
     margin-left:auto;
     margin-right:auto;
     margin-bottom:20px;
 }
 
+.exp_span_tags {
+    color:#3b5998;
+}
+
 .ind_exp_div {
     display:flex;
-    border:1px solid gray;
-    border-radius: 5px;
+    /* border:1px solid gray; */
+    /* border-radius: 5px; */
     /* box-shadow:1px 1px 4px 2px gray; */
     background-color:white;
     padding:15px;
