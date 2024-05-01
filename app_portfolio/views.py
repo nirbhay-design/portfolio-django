@@ -117,8 +117,8 @@ def home(request):
     ]
 
     skills = [{'type':'Languages','list':['Python','C/C++','HTML/CSS','Java','Javascript','Haskell','Prolog','Julia','Bash'],'image':'images/python_image.png'},
-            {'type':'Developement','list':['Django','Flask','React','Nodejs','Firebase','Mongodb','Mysql','Heroku','Git/Github'],'image':'images/django_image.png'},
-            {'type':'ML/Data Science','list':['Pytorch','Tensorflow','Matplotlib','Pandas','Numpy','OpenCV','Sklearn'],'image':'images/pytorch_image.png' }]
+            {'type':'Developement','list':['Docker', 'Django','Flask','React','Nodejs','Firebase','Mongodb','Mysql','Heroku','Git/Github'],'image':'images/django_image.png'},
+            {'type':'ML/Data Science','list':['Pytorch','Tensorflow','Matplotlib','Pandas','Numpy','OpenCV','Sklearn', "Deep Learning", "Computer Vision"],'image':'images/pytorch_image.png' }]
     
     experience = [
         {
@@ -126,7 +126,7 @@ def home(request):
             'title':'Federated Distillation Project',
             'duration':'August2022 - May2023',
             'image':'images/iitj.png',
-            'position':'Research Project' ,
+            'institute':'IIT Jodhpur' ,
             'desc':'The project tries to tackle clients data and system heterogeneity by proposing a novel Federated Learning (FL) approach.'
         },
 
@@ -135,7 +135,7 @@ def home(request):
             'title':'Cell Detection / Classification',
             'duration':'August2022 - May2023',
             'image':'images/iitj.png',
-            'position':'Research Project',
+            'institute':'IIT Jodhpur',
             'desc':'The project implements and compared various existing object detectors like Retinanet, YOLO, SSD etc. in detecting and classifying the necrotic and apoptotic cells.' 
         },
 
@@ -144,7 +144,7 @@ def home(request):
             'title':'Light weight CNN architecture for chest Xray diagnoses',
             'duration':'june2021-may2022',
             'image':'images/iitj.png',
-            'position':'Research Intern',
+            'institute':'IIT Jodhpur',
             'desc':'The project tries to tackle the scenario of resource constrained settings by proposing a light weight CNN model for chest X-ray diagnosis.'
         },
         {
@@ -152,8 +152,16 @@ def home(request):
             'title':'Split Neural Network Models',
             'duration':'june2022-july2022',
             'image':'images/exawizards.png',
-            'position':'AI Engineer (Intern)',
+            'institute':'Exawizards',
             'desc':'The project aims at exploring split learning by splitting various networks used for instance segmentation, semantic segmentation, face detection task.'
+        },
+         {
+            'under':'Sahil Bajaj',
+            'title':'Content Generation',
+            'duration':'July2023-Present',
+            'image':'images/exawizards.png',
+            'institute':'Faaya Astu',
+            'desc':'Trained stable diffusion LoRA models for content generation'
         }
     ]
 

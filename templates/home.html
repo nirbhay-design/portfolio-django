@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="{% static 'home.css' %}" />
 </head>
 <body>
-    <div class="upper__content">
-        <div class="header">
+
+    <div class = "portfolio_div">
+
+        <div class = "intro"> 
             <div class="Name_div">
                 <h2 class="Name"> Nirbhay Sharma </h2> 
                 <i class="fa-solid fa-handshake-simple"></i>
@@ -21,142 +23,65 @@
             <button class="resume__button" onclick="location.href='resume/'">Resume/CV</button>
         </div>
 
-        <div class="about-section">
-            <div class="about-content">
-                <img src="{% static 'images/profile-picture.png' %}" class='profile-pic'/>
-                <div class="name_div">
-                    <h1 class="my_name"> Nirbhay </h1>
-                    <h1 class="my_name"> Sharma </h1>
-                </div>
-            </div>
-            <div class="about_div">
-                <h2 class='about__desc' style="color:#3b5998">
-                    ML Engineer
-                </h2>
-            </div>
+        <div class = "ContentHeadline">
+            <h2 class = "Title"> About Me </h2>
         </div>
 
-    </div>
+        <h1 class ='greet'> Hi I am Nirbhay Sharma! </h1>
 
-    <div class="upper__content">
-        {% comment %} <div class="detailed__about__section">  {% endcomment %}
-        <div class='about_title_div'>
-            <h2 class='about_title'> About Me </h2>
-        </div>
-        <div class='about__detail'>
-            <h3> Hi, I am Nirbhay Sharma. I have recently completed my B.Tech in Computer Science and Engineering (CSE) from IIT Jodhpur. I am a Machine Learning enthusiast and holds a good experience in Pytorch and Python. I really like reading new state-of-the-art research papers realated to ML and implementing them from scratch fascinates me. Apart from that, I have a keen interest in exercise and yoga to keep myself fit to learn the skills :). Hope you like my profile !!!. </h3>
-            <div>
-            <a class = "anchor_button_res" href="https://drive.google.com/file/d/1s4TG8f-KUlHiDKEKxeYdNsH7od1BYdGf/view?usp=sharing">Resume <i class="fa-regular fa-file-pdf"></i></a>
-            <a class = "anchor_button_res" href="https://drive.google.com/file/d/1dOvRjJmd77JsW2HBkT945fVlDLgF8FRK/view?usp=drive_link">  Curriculum Vitae (CV) <i class="fa-regular fa-file-pdf"></i></a>
-            </div>
-        </div>
-        {% comment %} </div> {% endcomment %}
-    </div>
-
-    <div class="upper__content">
-
-        <div class="skill_intro_div">
-            <h2 class='skill_intro'> Skills </h2>
-        </div>
-        <div class='skills_section'>
-            {%for skill in skills%}
-                <div class='skill_container'>
-                    <h3 class="skill_type"> {{skill.type}} </h3>
-                    <div class='skill_img_div'>
-                        <img class="skill_image" src="{%static skill.image %}"/>
-                    </div>
-                    {% comment %} <hr/> {% endcomment %}
-                    <ul>
-                        {%for each_skill in skill.list%}
-                            <li> <h4> {{each_skill}} </h4> </li>
-                        {%endfor%}
-                    </ul>
-                </div>
-            {%endfor%}
+        <div class = 'portfolio_pic_div'>
+            <img src="{% static 'images/profile-picture.png' %}" class = "portfolio_pic"/>
         </div>
         
+        <ul> 
+        <li class = 'about_me_li'> Hi, I am Nirbhay Sharma. I have recently completed my B.Tech in Computer Science and Engineering (CSE) from IIT Jodhpur. I am a Machine Learning enthusiast and holds a good experience in Pytorch and Python. I really like reading new state-of-the-art research papers realated to ML and implementing them from scratch fascinates me. Apart from that, I have a keen interest in exercise and yoga to keep myself fit to learn the skills :). Hope you like my profile !!!.  </li>
+        </ul>
 
-    </div>
-
-    
-
-    <div class="upper__content">
-
-        <div class="project_intro_div">
-            <h2 class='project_intro'> ML Projects </h2>
+        <div class = "ResumePdf"> 
+            <button class="Resume" onclick="location.href='https://drive.google.com/file/d/1s4TG8f-KUlHiDKEKxeYdNsH7od1BYdGf/view?usp=sharing'">Resume</button>
+            <button class="Resume" onclick="location.href='https://drive.google.com/file/d/1dOvRjJmd77JsW2HBkT945fVlDLgF8FRK/view?usp=drive_link'"> Curriculum Vitae (CV)</button>
         </div>
 
-        <div class="projects-container">
-            {% for work in projects %}
-            {% if work.category == "ML/DL" %}
-            <div class="project-container">
-                {% comment %} div has an image, project-title, github url, live url (optional), description, category, techs  {% endcomment %}
-                <div class='image'>
-                    <img src="{% static work.image %}" class='ml_proj_img'/>
+        <div class = "ContentHeadline">
+            <h2 class = "Title"> Education </h2>
+        </div>
+
+        <ul>
+            <li> B.Tech Computer Science and Engineering, Indian Institute of Technology (IIT) Jodhpur, CGPA: <strong> 8.97 </strong> /10 </li>
+            <li> Class 12, PCM, Dehradun Public School, Percentage: <strong> 96.4 </strong> </li>
+            <li> Class 10, SD Public School, CGPA: <strong> 10 </strong>/10 </li>
+        </ul>
+
+        <div class = "ContentHeadline">
+            <h2 class = "Title"> Publications </h2>
+        </div>
+
+        <ul>
+            <li> An Extremely Lightweight CNN Model For the Diagnosis of Chest Radiographs in Resource-constrained Environments, <i> International Journal of Medical Physics 2023 </i>, <a href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.16722" > [Paper] </a> </li>
+            <li> Aggregation-Assisted Proxyless Distillation: A Novel Approach for Handling System Heterogeneity in Federated Learning, <i> International Joint Conference on Neural Networks (IJCNN) 2024 </i> </li> 
+        </ul>
+
+        <div class = "ContentHeadline">
+            <h2 class = "Title"> Skills </h2>
+        </div>
+
+        {%for skill in skills%}
+            <div class='skill_container'>
+                <div class='skill_img_div'>
+                    <img class="skill_image" src="{%static skill.image %}"/>
                 </div>
-                <div class="project-content">
-                    <h3 class="project-title"> {{work.title}} | {{work.category}} </h3>
-                    <div class="project-essentials"> 
-                        <h5 class='tech-stack'> Tech: {{work.techs}} </h5>
-                        <a class="anchor_button" href="{{work.github}}">Github <i class="fa-brands fa-github"></i></a>
-                        {% if work.url %}
-                            <a class="anchor_button" href="{{work.url}}">Live <i class="fa-brands fa-chrome"></i></i> </a>
-                        {%endif%}
-                        <h5 class='project-description'> {{work.description}}</h5> 
-                    </div>
+                <div class="skill_list">
+                    <h3 class="skill_type"> {{skill.type}} </h3>
+                    <hr class='skill_hr'/>
+                    {%for each_skill in skill.list%}
+                        <h4, class='skill_h4'> {{each_skill}}, </h4>
+                    {%endfor%}
                 </div>
-    
             </div>
-            {%endif%}
-            {%endfor%}
-        </div>
+        {%endfor%}
 
-    </div>
-
-
-    
-
-
-    <div class="upper__content">
-
-        <div class="project_intro_div">
-            <h2 class='project_intro'> Web-Dev Projects </h2>
-        </div>
-
-        <div class="projects-container">
-            {% for work in projects %}
-            {% if work.category == "web-dev" %}
-            <div class="project-container">
-                {% comment %} div has an image, project-title, github url, live url (optional), description, category, techs  {% endcomment %}
-                <div class='image'>
-                    <img src="{% static work.image %}" class='ml_proj_img'/>
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title"> {{work.title}} | {{work.category}} </h3>
-                    <div class="project-essentials"> 
-                        <h5 class='tech-stack'> Tech: {{work.techs}} </h5>
-                        <a class="anchor_button" href="{{work.github}}">Github <i class="fa-brands fa-github"></i></a>
-                        {% if work.url %}
-                            <a class="anchor_button" href="{{work.url}}">Live <i class="fa-brands fa-chrome"></i></i> </a>
-                        {%endif%}
-                        <h5 class='project-description'> {{work.description}}</h5> 
-                    </div>
-                </div>
-    
-            </div>
-            {%endif%}
-            {%endfor%}
-        </div>
-
-    </div>
-
-    
-
-
-    <div class="upper__content">
-
-        <div class="experience_intro_div">
-            <h2 class='experience_intro'> Research / Industry Experience </h2>
+        <div class = "ContentHeadline">
+            <h2 class = "Title"> Research / Industry Experience </h2>
         </div>
 
         <div class='experience_div'>
@@ -166,41 +91,56 @@
                         <img class="exp_img" src="{%static exp.image %}" />
                     </div>
                     <div class="exp_info">
-                        <h3 class='exp_htags'> {{exp.title}} </h3>
-                        {% comment %} <hr/> {% endcomment %}
+                        <h2 class='exp_htags'> {{exp.institute}} </h2>
+                        <hr/>
+                        <div class='title_duration'>
+                            <u> <h3 class='exp_htags'> {{exp.title}} </h3> </u>
+                            <h4 class='exp_htags'> {{exp.duration}} </h4>
+                        </div>
                         <h4 class='exp_htags'> <span class='exp_span_tags'>Supervisor:</span> {{exp.under}} </h4>
-                        {% comment %} <hr/> {% endcomment %}
-                        <h4 class='exp_htags'> <span class='exp_span_tags'>Duration:</span> {{exp.duration}} </h4>
-                        {% comment %} <hr/> {% endcomment %}
-                        <h4 class='exp_htags'> <span class='exp_span_tags'>Position:</span> {{exp.position}} </h4>
-                        {% comment %} <hr/> {% endcomment %}
-                        <h4 class='exp_htags'> <span class='exp_span_tags'>Description:</span> {{exp.desc}} </h4>
+                        <h4 class='exp_htags'> {{exp.desc}} </h4>
                     </div>
                 </div>
             {%endfor%}
         </div>
 
-    </div>
+        <div class = "ContentHeadline">
+            <h2 class = "Title"> Projects </h2>
+        </div>
 
-    <div class="upper__content">
-
-        <div class="connect_div">
-            <h2 class='connect_intro'> Connect </h2>
-            <div class="footer-nirbhay">
-                <div class="credentials">
-                    <a class='anchor_button_foot' href="https://www.github.com/nirbhay-design/"> Github <i class="fa-brands fa-github"> </i> </a>
-                    <a class='anchor_button_foot' href="https://www.linkedin.com/in/nirbhay-sharma-a2b846204/"> LinkedIN <i class="fa-brands fa-linkedin"></i> </a>
-                    <a class='anchor_button_foot' href="mailto:sharma.59@iitj.ac.in"> Mailto <i class="fa-solid fa-envelope"></i> </a>
+        <div class="projects-container">
+            {% for work in projects %}
+            <div class="project-container">
+                <h3 class="project-title"> {{work.title}} | {{work.category}} </h3>
+                <hr/>
+                <div class="project-essentials"> 
+                    <h5 class='tech-stack'> Tech: {{work.techs}} </h5>
+                    <button class="anchor_button" onclick = "location.href='{{work.github}}'">Github <i class="fa-brands fa-github"></i></button>
+                    {% if work.url %}
+                        <button class="anchor_button" onclick = "location.href='{{work.url}}'">Live <i class="fa-brands fa-chrome"></i></i> </button>
+                    {%endif%}
+                    <h5 class='project-description'> {{work.description}}</h5> 
                 </div>
             </div>
+            {%endfor%}
+        </div>
+
+        <div class = "ContentHeadline">
+            <h2 class = "Title"> Connect </h2>
+        </div>
+        
+
+        <div class="credentials">
+            <button class='anchor_button_foot' onclick="location.href='https://www.github.com/nirbhay-design/'"> Github <i class="fa-brands fa-github"> </i> </button>
+            <button class='anchor_button_foot' onclick='location.href="https://www.linkedin.com/in/nirbhay-sharma-a2b846204/"'> LinkedIN <i class="fa-brands fa-linkedin"></i> </button>
+            <button class='anchor_button_foot' onclick='location.href="mailto:sharma.59@iitj.ac.in"'> Mailto <i class="fa-solid fa-envelope"></i> </button>
+        </div>
+
+
+        <div class='footer-nirbhay-final'>
+            Made by @ Nirbhay-sharma
         </div>
     </div>
 
-    {% comment %} <hr class='footer-hr'/> {% endcomment %}
-    
-
-    <div class='footer-nirbhay-final'>
-        Made by @ Nirbhay-sharma
-    </div>
 </body>
 </html>
