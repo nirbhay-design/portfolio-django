@@ -104,6 +104,7 @@ body {
     padding:5px 20px 5px 20px;
     border-color: #2BAE66;
     color: #FCF6F5;
+    transition: 300ms linear; 
 }
 
 .Resume:hover {
@@ -251,6 +252,7 @@ a {
     padding:5px 20px 5px 20px;
     border-color: #D2302C;
     color: #F7F7F9;
+    transition: 300ms linear;
 }
 
 .anchor_button_foot:hover {
@@ -280,10 +282,11 @@ a {
 }
 
 .exp_img {
-    width:90%;
+    width:100%;
 }
 
 .exp_info {
+    width: 70%;
     padding:10px;
 }
 
